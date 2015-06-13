@@ -1,7 +1,6 @@
 # Wirtualizacja i przetwarzanie w chmurze
 
-Prowadzący: [Jakub Kanclerz](https://github.com/jkanclerz)
-
+Pojekt na zajęcia z RabbitMQ
 
 ## Instalacja
 
@@ -16,12 +15,27 @@ RabbitMQ plugin:
 
 Instalacja pozostałych pakietów:
 
-> Mocno zalecane jest wykorzystanie przy tworzeniu środowiska [wirtualenvwrapper'a](https://virtualenvwrapper.readthedocs.org/en/latest/), chodź nie jest to obowiązkowe.
+> Mocno zalecane jest wykorzystanie przy tworzeniu środowiska [virtualenvwrapper'a](https://virtualenvwrapper.readthedocs.org/en/latest/), chodź nie jest to obowiązkowe.
 
     sudo apt-get install python python-pip
     [sudo] pip install pika mandrill flask
 
 
+dla wirtualenvwrapper'a:
+
+    sudo apt-get install python python-pip
+    sudo pip install virtualenvwrapper
+
+    mkvirtualenv uekpython27
+    pip install -U pip
+    pip install pika mandrill flask
+
+> Poniższe programy odpalamy z wnętrza wirtualnego środowiska dla pythona tj.
+>
+>      $ workon uekpython27
+>      (uekpython27) $ <your commands into vitrualenvwrapper>
+>
+> Wyjście z środowiska to wpisanie `deactivate`.
 
 ## Obsługa
 
@@ -33,3 +47,4 @@ Pod adresem [http://127.0.0.1:5000/](http://127.0.0.1:5000/) można otrzowyć pr
 >
 > login: guest<br/>
 > hasło: guest
+
